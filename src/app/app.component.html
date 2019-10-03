@@ -1,0 +1,82 @@
+<mat-toolbar color="warn">MY TO-DO LIST FOR THIS WEEK</mat-toolbar>
+<!-- <button mat-raised-button>Click me!</button> -->
+<mat-tab-group>
+        <mat-tab label="SUN"> 
+                <mat-selection-list #sun>
+                        <mat-list-option *ngFor="let m of march">
+                          {{m}}
+                        </mat-list-option>
+                 </mat-selection-list><mat-divider></mat-divider>
+                      
+                <p>
+                         <b>jobs done: {{sun.selectedOptions.selected.length}}</b> 
+                </p>
+        </mat-tab>
+    <mat-tab label="MON"> 
+            <mat-selection-list #mon>
+                    <mat-list-option *ngFor="let shoe of typesOfShoes">
+                      {{shoe}}
+                    </mat-list-option>
+             </mat-selection-list><mat-divider></mat-divider>
+                  
+            <p>
+                     <b>jobs done: {{mon.selectedOptions.selected.length}}</b> 
+            </p>
+     </mat-tab>
+    <mat-tab label="TUE"> 
+            <mat-selection-list #tue>
+                    <mat-list-option *ngFor="let f of february">
+                      {{f}}
+                    </mat-list-option>
+             </mat-selection-list><mat-divider></mat-divider>
+                  
+            <p>
+                     <b>jobs done: {{tue.selectedOptions.selected.length}}</b> 
+            </p>
+    </mat-tab>
+    <mat-tab label="WED"> 
+            <mat-selection-list #wed>
+                    <mat-list-option *ngFor="let m of march">
+                      {{m}}
+                    </mat-list-option>
+             </mat-selection-list><mat-divider></mat-divider>
+                  
+            <p>
+                     <b>jobs done: {{wed.selectedOptions.selected.length}}</b> 
+            </p>
+    </mat-tab>
+    <mat-tab label="THUR"> 
+            <mat-selection-list #thur>
+                    <mat-list-option *ngFor="let m of march">
+                      {{m}}
+                    </mat-list-option>
+             </mat-selection-list><mat-divider></mat-divider>
+                  
+            <p>
+                     <b>jobs done: {{thur.selectedOptions.selected.length}}</b> 
+            </p>
+     </mat-tab>
+    <mat-tab label="FRI"> 
+            <mat-selection-list #fri>
+                    <mat-list-option *ngFor="let m of march">
+                      {{m}}
+                    </mat-list-option>
+             </mat-selection-list><mat-divider></mat-divider>
+                  
+            <p>
+                     <b>jobs done: {{fri.selectedOptions.selected.length}}</b> 
+            </p>
+    </mat-tab>
+    <mat-tab label="SAT"> 
+            <mat-selection-list #sat>
+                    <mat-list-option *ngFor="let m of march">
+                      {{m}}
+                    </mat-list-option>
+             </mat-selection-list><mat-divider></mat-divider>
+                  
+            <p>
+                     <b>jobs done: {{sat.selectedOptions.selected.length}}</b> 
+            </p>
+    </mat-tab>
+    
+  </mat-tab-group>
